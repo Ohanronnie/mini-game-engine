@@ -1,0 +1,17 @@
+{
+  "name": "rust-format-lens",
+  "displayName": "Rust Format Lens",
+  "description": "Format Rust files from a CodeLens above main.",
+  "version": "1.0.1",
+  "publisher": "local-tools",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Formatters"],
+  "activationEvents": ["onLanguage:rust"],
+  "extensionDependencies": ["rust-lang.rust-analyzer"],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "rustFormatLens.format", "title": "Rust: Format File" }
+    ]
+  }
+}
